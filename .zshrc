@@ -4,6 +4,11 @@ setopt IGNOREEOF
 # 日本語を使用
 export LANG=ja_JP.UTF-8
 
+# rbenvでrubyを管理する
+[[ -d ~/.rbenv  ]] && \
+  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+  eval "$(rbenv init -)"
+
 # 色を使用
 autoload -Uz colors
 colors
